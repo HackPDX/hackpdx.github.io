@@ -1,0 +1,94 @@
+body {
+  background: #50CCAE;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  text-align: center; }
+
+.overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(72, 149, 234, 0.7); }
+
+.main {
+  font-weight: 300;
+  margin-top: 100px; }
+  .main img {
+    width: 214px;
+    height: 245px; }
+  .main h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300; }
+  .main .twitter {
+    font-size: 20px;
+    margin-top: 25px; }
+  .main ::-webkit-input-placeholder {
+    color: #9B9B9B;
+    font-size: 16px;
+    opacity: 0.6; }
+  .main :-moz-placeholder {
+    /* Firefox 18- */
+    color: #9B9B9B;
+    font-size: 16px;
+    opacity: 0.6; }
+  .main ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #9B9B9B;
+    font-size: 16px;
+    opacity: 0.6; }
+  .main :-ms-input-placeholder {
+    color: #9B9B9B;
+    font-size: 16px;
+    opacity: 0.6; }
+  .main .twitter i {
+    margin-right: 5px; }
+  .main .twitter i, .main .twitter a {
+    color: white; }
+  .main .twitter a:hover, .main .twitter a:hover i {
+    color: #4AAED9;
+    text-decoration: none; }
+  .main #mc-embedded-subscribe:hover {
+    background: #3386AA; }
+  .main #mc-embedded-subscribe {
+    background: #4AAED9;
+    border: #4AAED9;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    height: 45px;
+    margin-left: 5px;
+    width: 161px; }
+  .main input#mce-EMAIL {
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 1px 4px 0px #D3D3D3;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 15px;
+    width: 296px;
+    height: 45px; }
+  .main #mc-embedded-subscribe-form {
+    text-align: center;
+    padding-left: none; }
+  .main #mc_embed_signup form {
+    padding: 0; }
+  .main .form-group {
+    text-align: -webkit-center; }
+
+.navbar {
+  background: none;
+  border: none; }
+  .navbar .navbar-text {
+    color: white; }
+  .navbar .glyphicon-heart {
+    color: red; }
+
+/*# sourceMappingURL=styles.css.map */
