@@ -121,15 +121,13 @@ body{
 	}
 }
 
-.navbar {
+.footer .navbar{
 	background: none;
 	border: none;
-	.navbar-text{
-		color: white;
-	}
+	color: white;
+	padding-top: 15px;
+
 	.glyphicon-heart{
 		color: red;
 	}
 }
-
-
