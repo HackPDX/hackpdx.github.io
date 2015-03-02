@@ -6,6 +6,8 @@ body {
   background-size: cover;
   font-family: 'Lato', sans-serif;
   text-align: center; }
+  body p {
+    color: white; }
 
 .overlay {
   z-index: 1;
@@ -83,12 +85,12 @@ body {
   .main .form-group {
     text-align: -webkit-center; }
 
-.navbar {
+.footer .navbar {
   background: none;
-  border: none; }
-  .navbar .navbar-text {
-    color: white; }
-  .navbar .glyphicon-heart {
+  border: none;
+  color: white;
+  padding-top: 15px; }
+  .footer .navbar .glyphicon-heart {
     color: red; }
 
 /*# sourceMappingURL=styles.css.map */
