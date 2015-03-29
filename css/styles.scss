@@ -1,134 +1,33 @@
 body{
-	background: url(/../assets/background.jpg) no-repeat center center fixed; 
-	//background: #50CCAE;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	font-family: 'proxima-nova', 'Lato', sans-serif;
-	text-align: center;
 }
 
-.overlay {
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	overflow: auto;
-	top: 0px;
-	left: 0px;
-	background: rgba(72, 149, 234, .7);
+.navbar {
+	margin-bottom: 0px !important;
 }
 
-.main {
-	font-weight: 300;
-	margin-top: 100px;
-
-	img {
-		width: 214px;
-		height: 245px;
+.container {
+	max-width: 1200px;
+	.intro {
+		background: url('../../assets/background.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position-y: 75%;
+		height: 450px;
 	}
-
-	h1{
-		color: white;
-		font-size: 20px;
-		font-weight: 300;
+	.about {
+		background-color: #23a58b;
 	}
-
-	.twitter {
-		font-size: 20px;
-		margin-top: 25px;
-		margin-bottom: 25px;
-	}
-
-	::-webkit-input-placeholder {
-	   color: #9B9B9B;
-	   font-size: 16px;
-	   opacity: 0.6;
-	}
-
-	:-moz-placeholder { /* Firefox 18- */
-	   color: #9B9B9B;  
-	   font-size: 16px;
-	   opacity: 0.6;
-	}
-
-	::-moz-placeholder {  /* Firefox 19+ */
-	   color: #9B9B9B; 
-	   font-size: 16px; 
-	   opacity: 0.6;
-	}
-
-	:-ms-input-placeholder {  
-	   color: #9B9B9B; 
-	   font-size: 16px; 
-	   opacity: 0.6;
-	}
-
-	.twitter{
-
-		i {
-			margin-right: 5px;
-		}
-
-		i, a {
-			color: white;
-		}
-
-		a:hover, a:hover i{
-			color: #4AAED9;
-			text-decoration: none;
-		}
-	}
-
-	#mc-embedded-subscribe:hover {
-	  background: #1E4C41;
-	}
-
-	#mc-embedded-subscribe {
-		background: #378C78;
-		border: #378C78;
-		border-radius: 4px;
-		color: white;
-		font-size: 20px;
-		font-weight: 300;
-		height: 45px;
-		margin-left: 5px;
-		width: 161px;
-	}
-
-	input#mce-EMAIL {
-		background: #FFFFFF;
-		border: 1px solid #D3D3D3;
-		box-shadow: 0px 1px 4px 0px #D3D3D3;
-		border-radius: 4px;
-		font-size: 16px;
-		padding-left: 15px;
-		width: 296px;
-		height: 45px;
-	}
-
-	#mc-embedded-subscribe-form{
+	.welcome {
+		background-color: #23a58b;
 		text-align: center;
-		padding-left: none;
-	}
-
-	#mc_embed_signup form{
-		padding: 0;
-
-	}
-
-	.form-group{
-		text-align: -webkit-center;
+		line-height: 1.3em;
+		padding: 30px;
 	}
 }
 
-.footer .navbar{
-	background: none;
-	border: none;
-	color: white;
-	padding-top: 15px;
-
-	.glyphicon-heart{
-		color: #378C78;
-	}
+.footer {
+	margin-top: 20px;
 }
