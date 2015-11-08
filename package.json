@@ -1,0 +1,22 @@
+{
+  "name": "hackpdx.github.io",
+  "version": "1.0.0",
+  "description": "Site for hackpdx.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackPDX/hackpdx.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackPDX/hackpdx.github.io/issues"
+  },
+  "homepage": "hackpdx.com",
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#1a0a2186b89452cb6cd7472799afbc276b4b64a1",
+    "node-sass": "^3.4.1"
+  }
+}
