@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Site for hackpdx.com",
   "scripts": {
+    "watch": "./node_modules/node-sass/bin/node-sass --watch css/styles.scss css/compiled/styles.css",
+    "build": "./node_modules/node-sass/bin/node-sass --output-style compressed css/styles.scss css/compiled/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
