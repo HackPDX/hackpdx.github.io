@@ -1,0 +1,19 @@
+# Site settings
+title: HackPDX
+email: hello@hackpdx.com
+description: > 
+  HackPDX is Portland's largest hackathon! 
+baseurl: ""
+url: "http://hackpdx.com" # the base hostname & protocol for your site
+twitter_username: hackpdx
+
+# Build settings
+markdown: kramdown
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules/bootstrap/scss
+  style: compressed
+
+exclude: [vendor]
