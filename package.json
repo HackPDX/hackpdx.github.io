@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Site for hackpdx.com",
   "scripts": {
-    "serve": "./script/server",
+    "serve": "./script/server --baseurl ''",
     "build": "JEKYLL_ENV=production ./script/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
