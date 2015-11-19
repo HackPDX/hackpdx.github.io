@@ -20,7 +20,7 @@
 @import "reboot";
 @import "type";
 @import "images";
-@import "code";
+// @import "code";
 @import "grid";
 @import "tables";
 @import "forms";
@@ -40,12 +40,12 @@
 // @import "pager";
 @import "labels";
 // @import "jumbotron";
-@import "alert";
-@import "progress";
+// @import "alert";
+// @import "progress";
 @import "media";
 @import "list-group";
 @import "responsive-embed";
-@import "close";
+// @import "close";
 
 // Components w/ JavaScript
 // @import "modal";
@@ -66,3 +66,4 @@
 @import "header";
 @import "hero";
 @import "intro";
+@import "about";
