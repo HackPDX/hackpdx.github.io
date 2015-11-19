@@ -5,7 +5,10 @@ header {
     font-size: $font-size-lg;
     .navbar-brand {
       text-transform: uppercase;
-      font-size: $font-size-h4;
+      font-size: $font-size-h2;
+    }
+    .nav {
+      line-height: 2;
     }
   }
 }

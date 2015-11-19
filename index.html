@@ -14,11 +14,11 @@ layout: default
         <h1 class="display-4">Dec 5, 2015</h1>
         <dl class="row dl-horizontal">
           <dt class="col-xs-3">WHERE:</dt>
-          <dd class="col-xs-9">Airbnb Portland</dd>
+          <dd class="col-xs-9"><a href="https://www.eventbrite.com/e/hackpdx-winter-hackathon-airbnb-portland-tickets-19642377881#map-target">Airbnb Portland</a></dd>
           <dt class="col-xs-3">THEME:</dt>
           <dd class="col-xs-9">Education</dd>
           <dt class="col-xs-3">REGISTER:</dt>
-          <dd class="col-xs-9"><a href="#">Here</a></dd>
+          <dd class="col-xs-9"><a href="https://www.eventbrite.com/e/hackpdx-winter-hackathon-airbnb-portland-tickets-19642377881">Here</a></dd>
         </dl>
       </div>
     </div>
@@ -27,12 +27,13 @@ layout: default
 
 <section id="intro">
   <div class="content text-center">
-    <h1>Welcome to HackPDX</h1>
+    <h1>We're HackPDX</h1>
     <p class="lead">
-      Mustache fanny pack distillery, swag cray selvage kombucha.
+      Dedicated to throwing Portland's largest hackathons and building awesome
+      hacks for the PDX community.
     </p>
     <p class="lead">
-      Cronut marfa pug microdosing gluten-free meditation celiac polaroid. 
+      Hosting and promoting hackathons and events in the Greater Portland Area.
     </p>
   </div>
 </section>
@@ -44,22 +45,22 @@ layout: default
     </h1>
     <div class="row">
       <div class="col-md-6">
-        <h6>But what about that?</h6>
+        <h1>_</h1>
+        <h5>Who can go to your hackathons?</h5>
         <p>
-          Lo-fi skateboard pabst, DIY bespoke cliche selvage umami. Chia blue bottle 
-          beard, hashtag pop-up fashion axe four dollar toast asymmetrical. Vinyl 
-          selfies photo booth typewriter cornhole. Flexitarian aesthetic migas, 
-          pinterest literally etsy street art. 
+          Anyone willing to get their hands dirty building something awesome!  
+          Hardware, software, art, data analysis, whatever your skill or skill 
+          level come on down and bring your best hackathon ideas and drive 
+          to get stuff done.
         </p>
       </div>
       <div class="col-md-6">
-        <h6>But what about that?</h6>
+        <h1>_</h1>
+        <h5>I Want to Host/Sponsor/Promote a Hackathon</h5>
         <p>
-          Yr bicycle rights semiotics selvage 
-          normcore, trust fund PBR&B irony flexitarian neutra master cleanse kombucha 
-          four loko. Everyday carry +1 synth, PBR&B tote bag tumblr narwhal bespoke 
-          chia deep v offal letterpress meditation. Etsy skateboard kickstarter, 
-          trust fund deep v direct trade typewriter.
+          Awesome!  We're always looking to support new hacks.  Send us an email
+          at <a href="mailto:organizers@hackpdx.com">organizers@hackpdx.com</a> 
+          and we'll get back to you right away!
         </p>
       </div>
     </div>
@@ -72,45 +73,15 @@ layout: default
       About Us
     </h1>
     <div class="row">
-      <div class="col-md-6">
-        <h6>Kevin Bastien</h6>
-        <p>
-          Lo-fi skateboard pabst, DIY bespoke cliche selvage umami. Chia blue bottle 
-          beard, hashtag pop-up fashion axe four dollar toast asymmetrical. Vinyl 
-          selfies photo booth typewriter cornhole. Flexitarian aesthetic migas, 
-          pinterest literally etsy street art. 
-        </p>
-      </div>
-      <div class="col-md-6">
-        <h6>Nick Bergseng</h6>
-        <p>
-          Yr bicycle rights semiotics selvage 
-          normcore, trust fund PBR&B irony flexitarian neutra master cleanse kombucha 
-          four loko. Everyday carry +1 synth, PBR&B tote bag tumblr narwhal bespoke 
-          chia deep v offal letterpress meditation. Etsy skateboard kickstarter, 
-          trust fund deep v direct trade typewriter.
-        </p>
-      </div>
-      <div class="col-md-6">
-        <h6>Lukas</h6>
-        <p>
-          Yr bicycle rights semiotics selvage 
-          normcore, trust fund PBR&B irony flexitarian neutra master cleanse kombucha 
-          four loko. Everyday carry +1 synth, PBR&B tote bag tumblr narwhal bespoke 
-          chia deep v offal letterpress meditation. Etsy skateboard kickstarter, 
-          trust fund deep v direct trade typewriter.
-        </p>
-      </div>
-      <div class="col-md-6">
-        <h6>Colby</h6>
-        <p>
-          Yr bicycle rights semiotics selvage 
-          normcore, trust fund PBR&B irony flexitarian neutra master cleanse kombucha 
-          four loko. Everyday carry +1 synth, PBR&B tote bag tumblr narwhal bespoke 
-          chia deep v offal letterpress meditation. Etsy skateboard kickstarter, 
-          trust fund deep v direct trade typewriter.
-        </p>
-      </div>
+      {% for member in site.data.members %}
+        <div class="col-md-6">
+          <h1>_</h1>
+          <h5>{{ member.name }}</h5>
+          <p>
+            {{member.blurb}}
+          </p>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -122,13 +93,15 @@ layout: default
     </h1>
     <div class="row">
       <div class="col-md-6">
+        <h1>_</h1>
         <p>
           <a href="https://twitter.com/hackpdx"><i class="fa fa-twitter" ></i> @hackpdx</a>
         </p>
       </div>
       <div class="col-md-6">
+        <h1>_</h1>
         <p>
-          <i class="fa fa-envelope-o" ></i> hello@hackpdx.com
+          <a href="mailto:hello@hackpdx.com"><i class="fa fa-envelope-o" ></i> hello@hackpdx.com</a>
         </p>
       </div>
     </div>
