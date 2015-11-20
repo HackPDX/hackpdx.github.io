@@ -1,10 +1,10 @@
 {
   "name": "hackpdx.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Site for hackpdx.com",
   "scripts": {
-    "watch": "./node_modules/node-sass/bin/node-sass --watch css/styles.scss css/compiled/styles.css",
-    "build": "./node_modules/node-sass/bin/node-sass --output-style compressed css/styles.scss css/compiled/styles.css",
+    "serve": "./script/server --baseurl ''",
+    "build": "JEKYLL_ENV=production ./script/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,6 @@
   },
   "homepage": "hackpdx.com",
   "dependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#1a0a2186b89452cb6cd7472799afbc276b4b64a1",
-    "node-sass": "^3.4.1"
+    "bootstrap": "git://github.com/twbs/bootstrap.git#1a0a2186b89452cb6cd7472799afbc276b4b64a1"
   }
 }

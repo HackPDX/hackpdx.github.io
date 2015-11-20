@@ -1,0 +1,31 @@
+#hero {
+  position: relative;
+  min-height: 32em;
+  overflow: hidden;
+  background: url("/images/hackpdx_background.png") 50% no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .backdrop {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 0;
+  }
+
+  .text-content {
+    text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    margin: 5em 0;
+  }
+  img {
+    max-height: 22em;
+  }
+  @media (max-width: 33.9em) {
+    img {
+      max-height: 10em;
+    }
+  }
+}

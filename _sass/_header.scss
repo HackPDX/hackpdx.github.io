@@ -1,0 +1,14 @@
+header {
+  .navbar {
+    max-width: 1245px;
+    margin: 0 auto;
+    font-size: $font-size-lg;
+    .navbar-brand {
+      text-transform: uppercase;
+      font-size: $font-size-h2;
+    }
+    .nav {
+      line-height: 2;
+    }
+  }
+}

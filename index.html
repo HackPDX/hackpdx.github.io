@@ -1,48 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HackPDX</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/compiled/styles.css">
-</head>
-<body >
-  <div class="container">
-    <div class="main">
-      <div class="text-center hero">
-        <img src="assets/logo.png">
-        <h1>Portland’s largest hackathon.</h1>
-        <h1>Sign up now for information about our next hackathon:<br/>December 5th, 2015!</h1>
-      </div>
-      <!-- Begin MailChimp Signup Form -->
-      <div class="row signup-form">
-        <div class="col-md-12">
-          <div id="mc_embed_signup" class="text-center">
-            <form class="form-inline" role="form" action="//hackpdx.us10.list-manage.com/subscribe/post?u=4c7953538b003d2af48e211e7&amp;id=084921b300" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_c0c85780ad6862b35a02438cc_231a0df48d" tabindex="-1" value=""></div>
-              <div class="form-group">
-                <label class="sr-only" for="mce-EMAIL"></label>
-                <input type="email" name="EMAIL" class="form-control form-control-lg" id="mce-EMAIL" placeholder="Stay in the loop">
-              </div>
-              <button type="submit" class="btn btn-lg" name="subscribe" id="mc-embedded-subscribe">Sign up</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!--End mc_embed_signup-->       
-      <div class= "twitter text-center">
-        <a href="http://www.twitter.com/hackpdx">
-          <img src='assets/TwitterLogo_white.png'></i>@hackpdx
-        </a>
-      </div>
-      <div class="text-center">
-        Made with <span><3</span> by the HackPDX Team
+---
+layout: default
+---
+
+<section id="hero">
+  <div class="backdrop"></div>
+  <div class="content">
+    <div class="col-md-6">
+      <img src="/images/hackpdx_logo.png" />
+    </div>
+    <div class="col-md-6">
+      <div class="text-content">
+        <h1><span class="label label-primary">Winter Event</span></h1>
+        <h1 class="display-4">Dec 5, 2015</h1>
+        <dl class="row dl-horizontal">
+          <dt class="col-xs-3">WHERE:</dt>
+          <dd class="col-xs-9"><a href="https://www.eventbrite.com/e/hackpdx-winter-hackathon-airbnb-portland-tickets-19642377881#map-target">Airbnb Portland</a></dd>
+          <dt class="col-xs-3">THEME:</dt>
+          <dd class="col-xs-9">Education</dd>
+          <dt class="col-xs-3">REGISTER:</dt>
+          <dd class="col-xs-9"><a href="https://www.eventbrite.com/e/hackpdx-winter-hackathon-airbnb-portland-tickets-19642377881">Here</a></dd>
+        </dl>
       </div>
     </div>
   </div>
-</body>
-</html>
+</section>
+
+<section id="intro">
+  <div class="content text-center">
+    <h1>We're HackPDX</h1>
+    <p class="lead">
+      A nonprofit group dedicated to throwing Portland's largest hackathons and 
+      building awesome hacks for PDX.
+    </p>
+    <p class="lead">
+      Want updates on our hackathon shenanigans?  Join our mailing list:
+      {% include mailchimp.html %}
+    </p>
+  </div>
+</section>
+
+<section id='faq'>
+  <div class="content">
+    <h1 class="display-4">
+      FAQ's
+    </h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>_</h1>
+        <h5>Who can go to your hackathons?</h5>
+        <p>
+          Anyone willing to get their hands dirty building something awesome!  
+          Hardware, software, art, data analysis, whatever your skill or skill 
+          level come on down and bring your best hackathon ideas and drive 
+          to get stuff done.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h1>_</h1>
+        <h5>I Want to Host/Sponsor/Promote a Hackathon</h5>
+        <p>
+          Awesome!  We're always looking to support new hacks.  Send us an email
+          at <a href="mailto:organizers@hackpdx.com">organizers@hackpdx.com</a> 
+          and we'll get back to you right away!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id='about'>
+  <div class="content">
+    <h1 class="display-4">
+      About Us
+    </h1>
+    <div class="row">
+      {% for member in site.data.members %}
+        <div class="col-md-6">
+          <h1>_</h1>
+          <h5>{{ member.name }}</h5>
+          <p>
+            {{member.blurb}}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id='contact'>
+  <div class="content">
+    <h1 class="display-4">
+      Contact
+    </h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>_</h1>
+        <p>
+          <a href="https://twitter.com/hackpdx"><i class="fa fa-twitter" ></i> @hackpdx</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h1>_</h1>
+        <p>
+          <a href="mailto:hello@hackpdx.com"><i class="fa fa-envelope-o" ></i> hello@hackpdx.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
